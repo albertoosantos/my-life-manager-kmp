@@ -82,6 +82,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.kodein.di)
     debugImplementation(compose.uiTooling)
 }
 
