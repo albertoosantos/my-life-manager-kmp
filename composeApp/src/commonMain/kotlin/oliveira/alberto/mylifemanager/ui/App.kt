@@ -1,4 +1,4 @@
-package oliveira.alberto.mylifemanager
+package oliveira.alberto.mylifemanager.ui
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -17,6 +17,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 
 import mylifemanagerkmp.composeapp.generated.resources.Res
 import mylifemanagerkmp.composeapp.generated.resources.compose_multiplatform
+import oliveira.alberto.mylifemanager.Greeting
 
 @Composable
 @Preview
