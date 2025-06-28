@@ -1,6 +1,6 @@
 package oliveira.alberto.mylifemanager
 
 import androidx.compose.ui.window.ComposeUIViewController
-import oliveira.alberto.mylifemanager.ui.App
+import oliveira.alberto.mylifemanager.ui.HomeScreen
 
-fun MainViewController() = ComposeUIViewController { App() }
+fun MainViewController() = ComposeUIViewController { HomeScreen() }

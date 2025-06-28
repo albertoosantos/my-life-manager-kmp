@@ -48,6 +48,8 @@ kotlin {
             implementation(libs.voyager.kodein)
             implementation(libs.voyager.transitions)
             implementation(libs.voyager.bottomSheetNavigator)
+            implementation(libs.voyager.tabNavigator)
+            implementation(compose.material)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
