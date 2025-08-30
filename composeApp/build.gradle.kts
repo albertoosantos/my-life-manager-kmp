@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.room)
 }
 
 kotlin {
@@ -28,10 +29,10 @@ kotlin {
     }
     
     sourceSets {
-        
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.room.runtime.android)
         }
         commonMain.dependencies {
             implementation(libs.kodein.di)
@@ -50,6 +51,8 @@ kotlin {
             implementation(libs.voyager.bottomSheetNavigator)
             implementation(libs.voyager.tabNavigator)
             implementation(compose.material)
+            implementation(libs.room.runtime)
+            implementation(libs.sqlite.bundled)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -84,7 +87,10 @@ android {
     }
 }
 
+room {
+    schemaDirectory("$projectDir/schemas")
+}
+
 dependencies {
     debugImplementation(compose.uiTooling)
 }
-

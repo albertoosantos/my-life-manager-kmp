@@ -5,19 +5,21 @@ android-minSdk = "24"
 android-targetSdk = "35"
 androidx-activity = "1.10.1"
 androidx-appcompat = "1.7.1"
-androidx-constraintlayout = "2.2.1"
 androidx-core = "1.16.0"
 androidx-espresso = "3.6.1"
-androidx-lifecycle = "2.9.1"
+androidx-lifecycle = "2.8.4"
 androidx-testExt = "1.2.1"
 composeMultiplatform = "1.8.2"
 junit = "4.13.2"
 kodeinDi = "7.26.1"
 kotlin = "2.2.0"
+kotlinCompose = "2.1.0"
 voyager = "1.1.0-beta02"
+room = "2.7.2"
+sqlite = "2.5.2"
 
 [libraries]
-kodein-di = { module = "org.kodein.di:kodein-di", version.ref = "kodeinDi" }
+kodein-di = { module = "org.kodein.di:kodein-di-framework-compose", version.ref = "kodeinDi" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-testJunit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
 junit = { module = "junit:junit", version.ref = "junit" }
@@ -34,10 +36,15 @@ voyager-bottomSheetNavigator = { module = "cafe.adriel.voyager:voyager-bottom-sh
 voyager-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
 voyager-kodein = { module = "cafe.adriel.voyager:voyager-kodein", version.ref = "voyager" }
 voyager-tabNavigator = { module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyager" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-runtime-android = { module = "androidx.room:room-runtime-android", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
-composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlinCompose" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+room = { id = "androidx.room", version.ref = "room" }
