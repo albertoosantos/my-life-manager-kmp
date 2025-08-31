@@ -7,7 +7,7 @@ import cafe.adriel.voyager.navigator.tab.Tab
 import cafe.adriel.voyager.transitions.SlideTransition
 import oliveira.alberto.mylifemanager.ui.FinanceScreen
 import oliveira.alberto.mylifemanager.ui.FitnessScreen
-import oliveira.alberto.mylifemanager.ui.goal.GoalScreen
+import oliveira.alberto.mylifemanager.ui.goal.list.GoalScreen
 import oliveira.alberto.mylifemanager.ui.HomeScreen
 
 @Composable
@@ -28,4 +28,3 @@ fun Tab.TabContent() {
         }
     }
 }
-
